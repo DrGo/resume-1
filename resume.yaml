@@ -1,0 +1,39 @@
+contact: 
+  name: Travis Bischel
+  phone: (480) 686-4245
+  email: travis.bischel@gmail.com
+  address: |
+           11268 194th Avenue  
+           Bloomer, WI 54724
+  github: [github.com/twmb](https://github.com/twmb)
+  linkedin: [linkedin.com/in/travisbischel](http://www.linkedin.com/in/travisbischel)
+  website: [twmb.io](http://twmb.io)
+
+work:
+  - employer: International Business Machine (IBM)
+    title: Software Intern
+    where: Rochester, MN  
+    dates: May 2012 - August 2012
+    fluff:
+      - Set up two PowerPC machines and documented incompatible software
+      - Learned Java Persistence API to work on JPA project
+      - Worked on a time critical project by writing scripts to automate repetitive tasks, which included working multiple 60-hour weeks
+  - employer: Great Lakes Educational Loan Company
+    title: Software Intern
+    where: Madison, WI & Eau Claire, WI
+    dates: May 2011 - September 2011
+    fluff: 
+      - Self taught multiple web languages and frameworks to help build business applications
+      - Designed, developed and deployed six in-house webpages that collated information into one place
+      - Discovered limited features in RichFaces and documented my efforts to work around them
+
+education:
+  - degree: Bachelor of Science - Computer Science Comprehensive
+    school: University of Wisconsin - Eau Claire
+    gpa: 3.89
+    dates: Fall 2010 - Spring 2013
+    honors:
+      - Dean's List
+      - Karlgaard Computer Science Scholarship
+
+interests: Programming, machine learning, reading, learning, exploring, hiking, camping
