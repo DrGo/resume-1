@@ -11,7 +11,7 @@ output/generate: generate.go
 	go build -o output/generate
 
 publish: output/resume.pdf
-	rsync -uv output/resume.pdf ../twmb-io/pages/
+	rsync -uv output/resume.pdf ../twmb-io/static/
 
 clean:
 	rm -rf output
