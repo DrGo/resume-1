@@ -3,11 +3,13 @@
 % Setup variables for use
 [[ $contact := assertMap .contact]]
 [[ $work := assertSlice .work ]]
+[[ $projects := assertSlice .projects ]]
 [[ $education := assertSlice .education ]]
 [[ $interests := .interests ]]
+[[ $technical := .technical ]]
 
 % Start 'TeXin'
-\documentclass[margin,line]{res}
+\documentclass[line]{res}
 
 \usepackage{color}
 \definecolor{linkcolor}{RGB}{60,110,180}
@@ -22,6 +24,7 @@
 \usepackage{microtype}
 \DisableLigatures{encoding = *, family = *}
 
+
 \begin{document}
 \begin{sloppypar}
 
@@ -31,7 +34,6 @@
 \begin{resume}
 
 \section{Work Experience}
-
 \begin{format}
   \employer{l}\location{r}\\
   \title{l}\dates{r}\\
@@ -44,6 +46,7 @@
   \title{[[ .title ]]}
   \dates{[[ .dates ]]}
   \begin{position}
+    \vspace{-.3cm}
     [[ $fluff := assertSlice .fluff ]]
     \begin{itemize}
     [[ range $fluff ]]
@@ -53,8 +56,24 @@
   \end{position}
 [[ end ]]
 
-\section{Education}
 
+\section{Projects}
+\begin{itemize}
+[[ range $projects ]]
+  \item [[ . ]]
+[[ end ]]
+\end{itemize}
+
+
+\section{Technical Knowledge}
+\begin{itemize}
+[[ range $technical ]]
+  \item [[ . ]]
+[[ end ]]
+\end{itemize}
+
+
+\section{Education}
 \begin{format}
   \employer{l}\dates{r}\\
   \location{l}\title{r}\\
@@ -65,8 +84,9 @@
   \employer{\textbf{[[ .degree ]]}}
   \dates{[[ .dates ]]}
   \location{[[ .school ]]}
-  \title{[[ .gpa ]]}
+  \title{\textit{[[ .gpa ]]}}
   \begin{position}
+    \vspace{-.3cm}
     [[ $honors := assertSlice .honors ]]
     \begin{itemize}
     [[ range $honors ]]
@@ -75,6 +95,7 @@
     \end{itemize}
   \end{position}
 [[ end ]]
+
 
 \section{Interests}
 [[ $interests ]]

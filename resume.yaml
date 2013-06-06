@@ -24,13 +24,25 @@ work:
       - 'Designed, developed and deployed six in-house webpages that collated information into one place'
       - 'Discovered limited features in RichFaces and documented my efforts to work around them'
 
+projects:
+  - '[twmb.io](http://twmb.io): Personal website using Go on the backend and hosted on Google App Engine'
+  - '[algoimpl](https://github.com/twmb/algoimpl): A collection of general algorithms from ''Introduction to Algorithms'' textbook, programmed in various languages (currently Go and C, working on JavaScript)'
+  - '[GoML](https://github.com/twmb/goml): Algorithms from ''Artificial Intelligence: A Modern Approach'' programmed in Go. Currently only A* implemented while I work on algoimpl'
+
+technical:
+  - 'Go: Programming all algorithms in the Projects section in Go, as well as the backend of my website'
+  - 'C/C++: Implemented TCP protocol with UDP in our networks class for the senior capstone project. Also implemented FCFS, Round Robin and Windows scheduling algorithms, as well as other operating systems projects'
+  - 'HTML and CSS: Using HTML5 and dynamic CSS on my website'
+  - 'Java: Used for first year and a half at university as well as at my two internships'
+  - 'Prior experience: Bash scripting, Linux command line, GNU Make, AWS EC2'
+  - 'Tools: Proficient with Vim and Git; worked with Mercurial, SVN, GDB'
+
 education:
-  - degree: 'Bachelor of Science - Computer Science Comprehensive'
+  - degree: 'Bachelor of Science - Computer Science'
     school: 'University of Wisconsin - Eau Claire'
-    gpa: '3.89'
+    gpa: 'GPA: 3.88'
     dates: 'Fall 2010 - Spring 2013'
     honors:
-      - 'Dean''s List'
-      - 'Karlgaard Computer Science Scholarship'
+      - 'Received Karlgaard Computer Science Scholarship'
 
-interests: 'Programming, machine learning, reading, learning, exploring, hiking, camping'
+interests: 'Programming, machine learning, artificial intelligence, reading, learning, exploring, hiking, camping'
