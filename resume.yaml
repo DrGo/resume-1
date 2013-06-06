@@ -21,17 +21,17 @@ work:
     dates: 'May 2011 - September 2011'
     fluff: 
       - 'Self taught multiple web languages and frameworks to help build business applications'
-      - 'Designed, developed and deployed six in-house webpages that collated information into one place'
+      - 'Designed, developed and deployed six in-house web pages that collated information into one place'
       - 'Discovered limited features in RichFaces and documented my efforts to work around them'
 
 projects:
-  - '[twmb.io](http://twmb.io): Personal website using Go on the backend and hosted on Google App Engine'
-  - '[algoimpl](https://github.com/twmb/algoimpl): A collection of general algorithms from ''Introduction to Algorithms'' textbook, programmed in various languages (currently Go and C, working on JavaScript)'
+  - '[twmb.io](http://twmb.io): Personal website using Go on the back-end and hosted on Google App Engine'
+  - '[algoimpl](https://github.com/twmb/algoimpl): A collection of general algorithms from ''Introduction to Algorithms'' textbook programmed in various languages (currently Go and C, working on JavaScript)'
   - '[GoML](https://github.com/twmb/goml): Algorithms from ''Artificial Intelligence: A Modern Approach'' programmed in Go. Currently only A* implemented while I work on algoimpl'
 
 technical:
-  - 'Go: Programming all algorithms in the Projects section in Go, as well as the backend of my website'
-  - 'C/C++: Implemented TCP protocol with UDP in our networks class for the senior capstone project. Also implemented FCFS, Round Robin and Windows scheduling algorithms, as well as other operating systems projects'
+  - 'Go: Programming all algorithms in the Projects section in Go as well as the back-end of my website'
+  - 'C/C++: Implemented TCP protocol with UDP in our networks class for the senior capstone project. Also implemented FCFS, Round Robin and Windows scheduling algorithms for our operating systems class, as well as other operating systems projects'
   - 'HTML and CSS: Using HTML5 and dynamic CSS on my website'
   - 'Java: Used for first year and a half at university as well as at my two internships'
   - 'Prior experience: Bash scripting, Linux command line, GNU Make, AWS EC2'
