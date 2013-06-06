@@ -1,4 +1,4 @@
-resume
+[resume](http://twmb.io/resume.pdf)
 ------
 
 My resume. The contents are written in YAML, which is compiled to LaTeX with the `generate.go` file, which is compiled to PDF with `pdflatex`.
