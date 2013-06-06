@@ -6,21 +6,18 @@
 [[ $education := assertSlice .education ]]
 [[ $interests := .interests ]]
 
-%[ $contact.name ]]
-%[ range $work ]]
-% [ .employer ]]
-% [ $fluff := assertSlice .fluff ]]
-% [ range $fluff ]]
-%   [ . ]]
-% [ end ]]
-%[ end ]]
-%[ $interests ]]
- 
 % Start 'TeXin'
 \documentclass[margin,line]{res}
 
 \usepackage{color}
 \definecolor{linkcolor}{RGB}{60,110,180}
+
+\usepackage{hyperref}
+\hypersetup {
+  pdfborder={0 0 0},
+  colorlinks=true,
+  urlcolor=linkcolor,
+}
 
 \usepackage{microtype}
 \DisableLigatures{encoding = *, family = *}
@@ -29,9 +26,58 @@
 \begin{sloppypar}
 
 \name{[[$contact.name]]}
-\address{[[$contact.phone]]\hspace{1cm}[[$contact.github]]\hspace{1cm}[[$contact.email]]\hspace{1cm}[[$contact.website]]}
+\address{[[$contact.phone]]\hspace{2.5cm}[[$contact.email]]\hspace{2.5cm}[[$contact.github]]}
 
 \begin{resume}
+
+\section{Work Experience}
+
+\begin{format}
+  \employer{l}\location{r}\\
+  \title{l}\dates{r}\\
+  \body\\
+\end{format}
+
+[[ range $work ]]
+  \employer{\textbf{[[ .employer ]]}}
+  \location{[[ .where ]]}
+  \title{[[ .title ]]}
+  \dates{[[ .dates ]]}
+  \begin{position}
+    [[ $fluff := assertSlice .fluff ]]
+    \begin{itemize}
+    [[ range $fluff ]]
+      \item [[ . ]]
+    [[ end ]]
+    \end{itemize}
+  \end{position}
+[[ end ]]
+
+\section{Education}
+
+\begin{format}
+  \employer{l}\dates{r}\\
+  \location{l}\title{r}\\
+  \body\\
+\end{format}
+
+[[range $education ]]
+  \employer{\textbf{[[ .degree ]]}}
+  \dates{[[ .dates ]]}
+  \location{[[ .school ]]}
+  \title{[[ .gpa ]]}
+  \begin{position}
+    [[ $honors := assertSlice .honors ]]
+    \begin{itemize}
+    [[ range $honors ]]
+      \item [[ . ]]
+    [[ end ]]
+    \end{itemize}
+  \end{position}
+[[ end ]]
+
+\section{Interests}
+[[ $interests ]]
 
 \vfill
 
