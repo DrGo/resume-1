@@ -1,7 +1,7 @@
 .PHONY: publish clean
-all: resume.pdf
+all: output/resume.pdf
 
-resume.pdf: output/resume.tex tex/res.cls
+output/resume.pdf: output/resume.tex tex/res.cls
 	TEXINPUTS=.//:$(TEXINPUTS) pdflatex -interaction=batchmode -output-directory output $<
 
 output/resume.tex: tex/resume.tex.tmpl resume.yaml output/generate
