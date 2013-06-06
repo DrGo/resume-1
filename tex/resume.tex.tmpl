@@ -1,0 +1,40 @@
+% This file is passed a map[string]interface{}
+
+% Setup variables for use
+[[ $contact := assertMap .contact]]
+[[ $work := assertSlice .work ]]
+[[ $education := assertSlice .education ]]
+[[ $interests := .interests ]]
+
+%[ $contact.name ]]
+%[ range $work ]]
+% [ .employer ]]
+% [ $fluff := assertSlice .fluff ]]
+% [ range $fluff ]]
+%   [ . ]]
+% [ end ]]
+%[ end ]]
+%[ $interests ]]
+ 
+% Start 'TeXin'
+\documentclass[margin,line]{res}
+
+\usepackage{color}
+\definecolor{linkcolor}{RGB}{60,110,180}
+
+\usepackage{microtype}
+\DisableLigatures{encoding = *, family = *}
+
+\begin{document}
+\begin{sloppypar}
+
+\name{[[$contact.name]]}
+\address{[[$contact.phone]]\hspace{1cm}[[$contact.github]]\hspace{1cm}[[$contact.email]]\hspace{1cm}[[$contact.website]]}
+
+\begin{resume}
+
+\vfill
+
+\end{resume}
+\end{sloppypar}
+\end{document}
