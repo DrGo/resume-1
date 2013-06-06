@@ -1,13 +1,13 @@
 all: resume.pdf
 
-resume.pdf: resume.tex res.cls
-	pdflatex -interaction=batchmode $<
+resume.pdf: output/resume.tex tex/res.cls
+	TEXINPUTS=.//:$(TEXINPUTS) pdflatex -interaction=batchmode -output-directory output $<
 
-resume.tex: resume.tex.tmpl resume.yaml resume
-	./resume
+output/resume.tex: tex/resume.tex.tmpl resume.yaml output/generate
+	./output/generate
 
-resume: build.go
-	go build
+output/generate: generate.go
+	go build -o output/generate
 
 clean:
-	rm -f resume.pdf resume.tex resume
+	rm -rf output
