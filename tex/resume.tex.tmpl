@@ -4,9 +4,10 @@
 [[ $contact := assertMap .contact]]
 [[ $work := assertSlice .work ]]
 [[ $projects := assertSlice .projects ]]
+[[ $technical := .technical ]]
 [[ $education := assertSlice .education ]]
 [[ $interests := .interests ]]
-[[ $technical := .technical ]]
+[[ $willingness := .willingness ]]
 
 % Start 'TeXin'
 \documentclass[line]{res}
@@ -99,6 +100,9 @@
 
 \section{Interests}
 [[ $interests ]]
+
+\vspace{.4cm}
+\hspace{-.5in}\textit{[[ $willingness ]]}
 
 \vfill
 

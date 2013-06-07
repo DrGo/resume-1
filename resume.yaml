@@ -14,7 +14,7 @@ work:
     fluff:
       - 'Set up two PowerPC machines and documented incompatible software'
       - 'Learned Java Persistence API to work on JPA project'
-      - 'Worked on a time critical project by writing scripts to automate repetitive tasks, which included working multiple 60-hour weeks'
+      - 'IBM PureApplication general availability on July 31: Worked on a time critical project by writing scripts to automate repetitive tasks, which included working multiple 60-hour weeks'
   - employer: 'Great Lakes Educational Loan Company'
     title: 'Software Intern'
     where: 'Madison, WI & Eau Claire, WI'
@@ -46,3 +46,5 @@ education:
       - 'Received Karlgaard Computer Science Scholarship'
 
 interests: 'Programming, machine learning, artificial intelligence, reading, learning, exploring, hiking, camping'
+
+willingness: 'Note: I am willing to relocate'
